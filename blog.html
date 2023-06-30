@@ -147,15 +147,18 @@
 
 <!--------JavaScript for Toggle Menu------->
 <script>
-
-    var navLink = document.getElementById(navLink);
-    function showMenu(){
-        navLink.style.right = "0";
+    var navLink = document.getElementById('navLink');
+    function showMenu() {
+        if (navLink) {
+            navLink.style.right = "0";
+        }
     }
-    function hideMenu(){
-        navLink.style.right = "-200px";
+    
+    function hideMenu() {
+        if (navLink) {
+            navLink.style.right = "-200px";
+        }
     }
-
 </script>
 
 </body>

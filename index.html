@@ -187,7 +187,7 @@
 </section>
 
 
-<!--------JavaScript for Toggle Menu------->
+<!--------JavaScript for Toggle Menu
 <script>
 
     var navLink = document.getElementById(navLink);
@@ -199,6 +199,24 @@
     }
 
 </script>
+------------->
+<!------------ refactored script -------->
+
+<script>
+    var navLink = document.getElementById('navLink');
+    function showMenu() {
+        if (navLink) {
+            navLink.style.right = "0";
+        }
+    }
+    
+    function hideMenu() {
+        if (navLink) {
+            navLink.style.right = "-200px";
+        }
+    }
+</script>
+
 
 </body>
 </html>
